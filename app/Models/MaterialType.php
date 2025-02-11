@@ -12,5 +12,10 @@ class MaterialType extends Model
         return $this->belongsTo(NumberRange::class);
     }
 
+    public function materialMasters()
+    {
+        return $this->hasMany(MaterialMaster::class);
+    }
+
     use log;
 }

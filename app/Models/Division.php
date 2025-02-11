@@ -17,6 +17,16 @@ class Division extends Model
         return $this->hasMany(SalesArea::class);
     }
 
+    public function businessPartnerCustomers()
+    {
+        return $this->hasMany(BusinessPartnerCustomer::class);
+    }
+
+    public function allMaterialMasterSales()
+    {
+        return $this->hasMany(MaterialMasterSales::class);
+    }
+
     public function salesOrganizations()
     {
         return $this->belongsToMany(SalesOrganization::class);

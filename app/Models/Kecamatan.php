@@ -22,5 +22,10 @@ class Kecamatan extends Model
         return $this->hasMany(Kodepos::class);
     }
 
+    public function businessPartners()
+    {
+        return $this->hasMany(BusinessPartner::class);
+    }
+
     use log;
 }

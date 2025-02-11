@@ -48,7 +48,7 @@ class NrObjectResource extends Resource
 
     protected static ?int $navigationSort = 960000000;
 
-    protected static ?string $navigationIcon = 'heroicon-o-user-group';
+    // protected static ?string $navigationIcon = 'heroicon-o-user-group';
 
     protected static ?string $cluster = NumberRange::class;
 

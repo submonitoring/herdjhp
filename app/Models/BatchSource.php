@@ -12,5 +12,10 @@ class BatchSource extends Model
         return $this->belongsTo(NumberRange::class);
     }
 
+    public function batchMasters()
+    {
+        return $this->hasMany(BatchMaster::class);
+    }
+
     use log;
 }

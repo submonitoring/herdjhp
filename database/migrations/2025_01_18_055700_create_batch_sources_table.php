@@ -18,7 +18,7 @@ return new class extends Migration
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
             $table->string('batch_source')->nullable();
-            $table->string('batch_sources_desc')->nullable();
+            $table->string('batch_source_desc')->nullable();
             $table->boolean('is_active')->nullable();
             $table->string('created_by')->nullable();
             $table->string('updated_by')->nullable();

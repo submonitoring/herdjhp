@@ -17,5 +17,25 @@ class NumberRange extends Model
         return $this->hasMany(DocumentType::class);
     }
 
+    public function materialTypes()
+    {
+        return $this->hasMany(MaterialType::class);
+    }
+
+    public function batchSources()
+    {
+        return $this->hasMany(BatchSource::class);
+    }
+
+    public function businessPartners()
+    {
+        return $this->hasMany(BusinessPartner::class);
+    }
+
+    public function batchMasters()
+    {
+        return $this->hasMany(BatchMaster::class);
+    }
+
     use log;
 }

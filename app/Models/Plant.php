@@ -12,6 +12,16 @@ class Plant extends Model
         return $this->belongsTo(CompanyCode::class);
     }
 
+    public function materialMasterPlants()
+    {
+        return $this->hasMany(MaterialMasterPlant::class);
+    }
+
+    public function allMaterialMasterSales()
+    {
+        return $this->hasMany(MaterialMasterSales::class);
+    }
+
     public function storageLocations()
     {
         return $this->belongsToMany(StorageLocation::class);

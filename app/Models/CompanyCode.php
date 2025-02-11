@@ -32,5 +32,10 @@ class CompanyCode extends Model
         return $this->hasMany(SalesOrganization::class);
     }
 
+    public function businessPartnerCompanies()
+    {
+        return $this->hasMany(BusinessPartnerCompany::class);
+    }
+
     use log;
 }

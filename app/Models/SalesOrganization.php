@@ -32,6 +32,16 @@ class SalesOrganization extends Model
         return $this->hasMany(SalesArea::class);
     }
 
+    public function businessPartnerCustomers()
+    {
+        return $this->hasMany(BusinessPartnerCustomer::class);
+    }
+
+    public function allMaterialMasterSales()
+    {
+        return $this->hasMany(MaterialMasterSales::class);
+    }
+
     public function distributionChannels()
     {
         return $this->belongsToMany(DistributionChannel::class);

@@ -12,5 +12,10 @@ class PurchasingOrganization extends Model
         return $this->belongsTo(CompanyCode::class);
     }
 
+    public function businessPartnerVendors()
+    {
+        return $this->hasMany(BusinessPartnerVendor::class);
+    }
+
     use log;
 }

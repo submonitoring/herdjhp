@@ -32,5 +32,10 @@ class Kodepos extends Model
         return $this->belongsTo(Kelurahan::class);
     }
 
+    public function businessPartners()
+    {
+        return $this->hasMany(BusinessPartner::class);
+    }
+
     use log;
 }

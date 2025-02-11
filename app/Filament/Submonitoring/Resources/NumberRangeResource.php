@@ -99,7 +99,6 @@ class NumberRangeResource extends Resource
                                 ->label('Interval Code')
                                 ->required()
                                 ->inlineLabel()
-                                ->maxLength(4)
                                 ->unique(NumberRange::class, ignoreRecord: true),
 
                         ]),
